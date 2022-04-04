@@ -1,0 +1,37 @@
+<html>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/reg.css' %}">
+    <head></head>
+    
+    <body>
+        <div id="contain1">REGISTERATION</div>
+            <form method="POST">
+                {% csrf_token %}
+                <font color="green" >
+                    {{hi}}
+        <div id="contain">
+            <h3 id="msg">{{ivalid}}<h3>
+        User Name<input type="text" name="uname" placeholder="username"  required><br>
+        PASSWORD<input type="password" name="pwd" placeholder="password" required><br>
+        Mobile No<input type="text" name="mno" id="seclin" placeholder="mobile no" required>Age:<input type="number" name="age" id="seclin" placeholder="age" required><br>
+        Gender<select name="gender" id="seclin"  required>
+
+            <option>male</option>
+            <option>female</option>
+            <option>trangender</option>
+        </select>
+       
+        Nick Name<input type="text" name="nname" id="seclin" placeholder="niken name" required><br>
+        E-mail<input type="email" name="mail" placeholder="Mail address" required ><br>
+        <input type="reset" value="RESET" id="sin"><input type="submit" value="SIGN IN" id="sin">
+        
+        
+    </div>
+   
+    </font>
+        <form>
+            
+           
+
+    </body>
+</html>

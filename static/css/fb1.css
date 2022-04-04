@@ -1,0 +1,117 @@
+img{
+    height:10%;
+
+}
+body{
+
+    background-size: cover;
+    outline: none;
+    background-repeat:no-repeat;
+background:linear-gradient(91deg,rgb(226, 128, 98),rgb(126, 63, 226)); 
+
+}
+
+div{
+    height:310px;
+    width:310px;
+    margin-top: -40px;
+    margin-left: 470px;
+    border: 2px solid #edfdc86c;
+    border-radius: 20px;
+    background-color:rgb(255, 255, 255) ;   
+    padding-top: 30px;
+    padding-bottom: 0px;
+
+}
+#ff{
+    margin:20px;
+    height:30px;
+    border: none;
+    border-bottom: 1px solid rgb(184, 178, 178);
+    background-color: transparent;
+    color:rgb(0, 0, 0);
+    margin-left: 40px;
+    margin-top: 30px;
+    
+    outline:none;
+    }
+#ff1{
+    margin-top: 25px;
+    margin-left: 65px;
+    height: 30px;
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+
+
+}
+#ff1:hover
+{
+    background-color:black;
+    color:white;
+    font-weight: bold;
+    
+
+}
+
+#ff12:hover
+{
+    background:linear-gradient(120deg,rgb(238, 211, 231),rgb(105, 11, 11)); 
+    color:rgb(5, 5, 5);
+}
+#ff12
+{
+    height: 30px;
+    border: none;
+    border-radius: 50px;
+    margin-left: 15px;
+    padding-top: 5px;
+    width: 80px;
+    background:linear-gradient(20deg,rgb(252, 191, 191),rgb(243, 158, 137)); 
+    color: rgb(48, 27, 27);
+}
+#ff13
+{
+    height: 30px;
+    border: none;
+    border-radius: 50px;
+    margin-left: 60px;
+    padding: 10px;
+    width: 80px;
+    margin-top: 20px;
+    font-size: 12px;
+    outline: none;
+    background:linear-gradient(20deg,rgb(252, 191, 191),rgb(243, 158, 137)); 
+    color: rgb(48, 27, 27);
+
+}
+#ff13:hover
+{
+    height: 30px;
+    border: none;
+    border-radius: 50px;
+    margin-left: 60px;
+    padding: 10px;
+    width: 80px;
+    margin-top: 20px;
+    color:rgb(0, 0, 0);
+    background:linear-gradient(120deg,rgb(226, 128, 98),rgb(158, 11, 11)); 
+
+}
+
+#iim{
+    border-radius:120px;
+    height:100px;
+    margin-left: 575px;
+    margin-top: 100px;
+
+}
+h3{
+    color:rgb(226, 0, 0);
+    text-align: center;
+    font-family: fantasy;
+    font-size:40px;
+    background-color: black;
+    
+    
+}

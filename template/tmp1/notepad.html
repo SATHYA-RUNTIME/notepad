@@ -1,0 +1,38 @@
+<html>
+{% load static %}
+    <head>
+        <link rel="stylesheet" href="{% static 'css/notepad1.css' %}">
+        <title>fb login</title>
+    </head>
+    
+    
+    <body >
+        <div id="top">
+            <div><img id="logo" src="{% static 'img/logo.png' %}"></img></div>
+        </div>
+        <div id="user">
+        <div id="ui">{{fl}}</div>
+        <div id="uname">{{un}}</div>
+        <div id="pd">
+            {% for i in old %}
+            <button onclick="surya()"><div id="predata">{{i.npnots}} </div></button>
+            {% endfor %}
+        </div>
+        <a href="../popup" target="_self"><input id ="sve1" type="submit" value="VIEW DETAILS" title="view more"></a>
+
+        </div>
+        
+            
+    <form method="POST">
+                {% csrf_token %}
+        <textarea name="datas" rows=40 cols=172 title="fill some data" required></textarea>
+    <div id="edit"> <input id ="sve" type="submit" value="SAVE" title="Save the text">
+    </div>
+    </form>   
+    <script>
+        function surya() {
+          document.getElementById("dedatasmo").innerHTML = "Hello World";
+        }
+        </script> 
+    </body>
+</html>

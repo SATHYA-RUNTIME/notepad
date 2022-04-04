@@ -1,0 +1,34 @@
+<html>
+{% load static %}
+<head>
+<title>view details</title>
+</head>
+<link rel="stylesheet" href={% static 'css/popup1.css' %}>
+<body>
+<a href="../npad" target="_self"><input id ="sve" type="button" value="GO TO    NPAD" title="Go To Npad"></a>
+
+    <table border="1px" >
+        <thead>
+        <th>NO</th>
+        <th>DATE</th>
+        <th>YOUR NOTES</th>
+        <th>TIME</th>
+        <th>UPDATE</th>
+        <th>DELETE</th>
+        </thead>
+        {%for i in dtime %}
+
+   
+        <tr>
+        <td>{{i}}</td>
+        <td>{{i.date}}</td>
+        <td height="50px" id="datas">{{i.npnots}}</td>
+        <td>{{i.time}}</td>
+        <td><a href='../update/{{i.id}}' id='up'>UPDATE</a></td>
+        <td><a href='../delete/{{i.id}}' id='del'>DELETE</a></td>
+        </tr>
+
+        {% endfor %}
+    </table>
+</body>
+</html>

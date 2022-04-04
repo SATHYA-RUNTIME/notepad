@@ -1,0 +1,29 @@
+<html>
+{% load static %}
+    <head>
+        <link rel="stylesheet" href="{% static 'css/fb1.css' %}">
+        <title>fb login</title>
+    </head>
+    <body >
+        <img id="iim"  src="{% static 'img/index.png' %}"> </img>
+
+
+        <div>
+            <form method="POST">
+                {% csrf_token %}
+            <input id="ff" type="text" placeholder="User name" name="uns" required><br>
+            
+            <input id="ff" type="password" placeholder="password" name="password" required><br><br>
+            
+            
+            
+            <a href="register/"><input id="ff13" type="button" value="REGISTER"></input></a>
+
+            <input id="ff12" type="submit" value="Login"></input><br>
+            <h3>{{col}}</h3>
+            <br>
+
+            </form>
+        </div>
+    </body>
+</html>
